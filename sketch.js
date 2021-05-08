@@ -55,10 +55,17 @@ function draw() {
     }
 
     //write code to bounce off ball from the block3
-    if(block3.isTouching(ball) && ball.bounceoff(block3)){
+    if(block3.isTouching(ball) && ball.bounceOff(block3)){
         ball.shapeColor = "green";
+        music.play();
     }
-
+    
+    if(block4.isTouching(ball)&& ball.bounceOff(block4){
+       ball.shapeColor = "red";
+       ball.VelocityX = 0;
+       ball.VelocityY = 0;
+       music.stop();
+}
     //write code to bounce off ball from the block4
 
     drawSprites();

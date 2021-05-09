@@ -60,7 +60,7 @@ function draw() {
         music.play();
     }
     
-    if(block4.isTouching(ball)&& ball.bounceOff(block4){
+    if(block4.isTouching(ball)){
        ball.shapeColor = "red";
        ball.VelocityX = 0;
        ball.VelocityY = 0;
